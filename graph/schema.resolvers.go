@@ -18,9 +18,9 @@ func (r *mutationResolver) CreateCategory(ctx context.Context, input model.NewCa
 		return nil, err
 	}
 	return &model.Category {
-		ID: category.ID,
-		Name: category.Name,
-		Description: category.Description,
+		ID: 			category.ID,
+		Name: 			category.Name,
+		Description: 	&category.Description,
 	}, nil
 }
 
